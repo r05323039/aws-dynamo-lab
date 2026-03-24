@@ -1,1 +1,7 @@
-spring.application.name=aws-dynamodb-lab
+aws:
+  region: us-east-1
+  dynamodb:
+    endpoint: ${DYNAMODB_ENDPOINT:http://localhost:8000}
+  credentials:
+    access-key: ${AWS_ACCESS_KEY_ID:fakeKey}
+    secret-key: ${AWS_SECRET_ACCESS_KEY:fakeSecret}
